@@ -7,7 +7,7 @@ include("auth_session.php");
 <head>
     <meta charset="utf-8">
     <title>Dashboard - Client area</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
     <div class="form">

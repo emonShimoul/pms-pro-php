@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/login.css"/>
 </head>
 <body>
 <?php
@@ -32,13 +32,26 @@
         }
     } else {
 ?>
-    <form class="form" method="post" name="login">
-        <h1 class="login-title">Login</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
-        <input type="password" class="login-input" name="password" placeholder="Password"/>
-        <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link"><a href="registration.php">New Registration</a></p>
-  </form>
+    <div id="content">
+        <div id="header">
+            <h1>Pharmacy Management System</h1>
+        </div>
+        <div id="main">
+            <section class="container">
+                <div class="login">
+                    <img src="images/ulg.png">
+                    <form class="form" method="post" name="login" align="center">
+                        <h1 class="login-title">Login</h1>
+                        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+                        <input type="password" class="login-input" name="password" placeholder="Password"/>
+                        <input type="submit" value="Login" name="submit" class="login-button"/>
+                        <p class="link"><a href="registration.php">New Registration</a></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div id="footer" align="center"> </div>
+    </div>
 <?php
     }
 ?>
