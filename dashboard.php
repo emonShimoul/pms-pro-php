@@ -59,7 +59,7 @@ include("auth_session.php");
                         }
 
                         echo '
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding: 10px">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px">
                         <div class="dashboard-stats" onclick="location.href=\''.$location.'\'">
                         <a class="text-dark text-decoration-none" href="'.$location.'">
                             <span class="h4">'.$count.'</span>
@@ -73,8 +73,6 @@ include("auth_session.php");
                     createSection1('manage_customer.php', 'Total Customer', 'customers');
                     createSection1('manage_supplier.php', 'Total Supplier', 'suppliers');
                     createSection1('manage_medicine.php', 'Total Medicine', 'medicines');
-                    createSection1('manage_medicine_stock.php?out_of_stock', 'Out of Stock', 'medicines_stock');
-                    createSection1('manage_medicine_stock.php?expired', 'Expired', 'medicines_stock');
                     createSection1('manage_invoice.php', 'Total Invoice', 'invoices');
                     ?>
 
