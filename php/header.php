@@ -13,7 +13,7 @@
         <div id="mark"><i class="fa fa-play fa-rotate-270"></i></div>
         <ul id="options" class="options list-unstyled" style="display: none;">
           <li>
-            <a href="dashboard.php"><i class="fa fa-user"></i><span>Dashboard</span></a>
+            <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
           </li>
           <li>
             <a href="logout.php"><i class="fa fa-key"></i><span>Logout</span></a>
