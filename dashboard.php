@@ -137,7 +137,7 @@ include("auth_session.php");
                     </div>
                 ';
                 }
-//                createSection2('address-card', 'new_invoice.php', 'Create New Invoice');
+                createSection2('address-card', 'new_invoice.php', 'Create New Invoice');
                 createSection2('handshake', 'add_customer.php', 'Add New Customer');
                 createSection2('shopping-bag', 'add_medicine.php', 'Add New Medicine');
                 createSection2('group', 'add_supplier.php', 'Add New Supplier');
