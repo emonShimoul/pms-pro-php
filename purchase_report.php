@@ -56,7 +56,9 @@
             </div>
           </div>
 
-
+          <div class="col-md-12 text-center">
+            <button class="btn btn-primary" onclick="printReport('Purchase');">Print</button>
+          </div>
 
         </div>
         <!-- form content end -->
