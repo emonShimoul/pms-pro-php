@@ -27,6 +27,7 @@
       while($row = mysqli_fetch_array($result)) {
         $seq_no++;
         showInvoiceRow($seq_no, $row);
+
       }
     }
   }
