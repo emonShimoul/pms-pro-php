@@ -13,7 +13,7 @@ function showPurchases($start_date, $end_date) {
       <th>SL</th>
       <th>Purchase Date</th>
       <th>Voucher Number</th>
-      <th>Invoice Number</th>
+      <th>Invoice No</th>
       <th>Supplier Name</th>
       <th>Total Amount</th>
     </tr>
