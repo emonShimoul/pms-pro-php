@@ -59,7 +59,7 @@ include("auth_session.php");
                         }
 
                         echo '
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding: 10px">
                         <div class="dashboard-stats" onclick="location.href=\''.$location.'\'">
                         <a class="text-dark text-decoration-none" href="'.$location.'">
                             <span class="h4">'.$count.'</span>
