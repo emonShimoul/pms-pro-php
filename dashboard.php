@@ -73,6 +73,7 @@ include("auth_session.php");
                     createSection1('manage_customer.php', 'Total Customer', 'customers');
                     createSection1('manage_supplier.php', 'Total Supplier', 'suppliers');
                     createSection1('manage_medicine.php', 'Total Medicine', 'medicines');
+                    createSection1('manage_medicine_stock.php?out_of_stock', 'Out of Stock', 'medicines_stock');
                     createSection1('manage_invoice.php', 'Total Invoice', 'invoices');
                     ?>
 
