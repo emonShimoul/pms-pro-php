@@ -48,23 +48,6 @@ function updatePurchase(id) {
   }
 }
 
-function printPurchase(id) {
-  //Get the HTML of div
-  var divElements = document.getElementById("purchases_div").innerHTML;
-
-  //Get the HTML of whole page
-  var oldPage = document.body.innerHTML;
-
-  //Reset the pages HTML with divs HTML only
-  document.body.innerHTML = "<html><head><title></title></head><body>" + divElements + "</body>";
-
-  //Print Page
-  window.print();
-
-  //Restore orignal HTML
-  document.body.innerHTML = oldPage;
-}
-
 function cancel() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
