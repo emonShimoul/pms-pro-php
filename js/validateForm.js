@@ -31,8 +31,8 @@ function validateName(name, error) {
 function validateContactNumber(contact_number, error) {
   var result = document.getElementById(error);
   result.style.display = "block";
-  if(contact_number.length != 10) {
-    result.innerHTML = "Must contain 10 digits!";
+  if(contact_number.length != 11) {
+    result.innerHTML = "Must contain 11 digits!";
     return false;
   }
   else
