@@ -15,9 +15,6 @@
   if(isset($_GET["action"]) && $_GET["action"] == "search")
     searchInvoice(strtoupper($_GET["text"]), $_GET["tag"]);
 
-  if(isset($_GET["action"]) && $_GET["action"] == "print_invoice")
-    printInvoice($_GET["invoice_number"]);
-
   function showInvoices() {
     require "db_connection.php";
     if($con) {
