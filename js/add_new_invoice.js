@@ -156,7 +156,6 @@ function isCustomer(name, contact_number) {
   };
   xhttp.open("GET", "php/add_new_invoice.php?action=is_customer&name=" + name + "&contact_number=" + contact_number, false);
   xhttp.send();
-  //alert(xhttp.responseText);
   return xhttp.responseText;
 }
 
@@ -209,7 +208,6 @@ function addInvoice() {
 
     var medicines = new Array(row_count-1);
     for(var i = 1; i < row_count; i++) {
-      //alert(i);
       var elements_count = medicine_info[i].childElementCount;
       var elements = medicine_info[i].children;
 
@@ -299,7 +297,6 @@ function updateStock(name, batch_id, quantity) {
   xhttp.onreadystatechange = function() {
     if(xhttp.readyState = 4 && xhttp.status == 200)
       xhttp.responseText;
-        //alert("Stock result : " + xhttp.responseText);
   };
   xhttp.open("GET", "php/add_new_invoice.php?action=update_stock&name=" + name + "&batch_id=" + batch_id + "&quantity=" + quantity, true);
   xhttp.send();
@@ -310,7 +307,6 @@ function addSale(customers_name, customers_contact_number, invoice_number, medic
   xhttp.onreadystatechange = function() {
     if(xhttp.readyState = 4 && xhttp.status == 200)
       xhttp.responseText;
-      //alert("Sales result : " + xhttp.responseText);
   };
   xhttp.open("GET", "php/add_new_invoice.php?action=add_sale&customers_name=" + customers_name + "&customers_contact_number=" + customers_contact_number + "&invoice_number=" + invoice_number + "&medicine_name=" + medicine_name + "&batch_id=" + batch_id + "&expiry_date=" + expiry_date +  "&quantity=" + quantity + "&mrp=" + mrp + "&discount=" + discount + "&total=" + total, true);
   xhttp.send();
