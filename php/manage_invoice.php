@@ -43,9 +43,6 @@
       <td><?php echo $row['TOTAL_DISCOUNT']; ?></td>
       <td><?php echo $row['NET_TOTAL']; ?></td>
       <td>
-        <button class="btn btn-warning btn-sm" onclick="printInvoice(<?php echo $row['INVOICE_ID']; ?>);">
-          <i class="fa fa-fax"></i>
-        </button>
         <button class="btn btn-danger btn-sm" onclick="deleteInvoice(<?php echo $row['INVOICE_ID']; ?>);">
           <i class="fa fa-trash"></i>
         </button>
