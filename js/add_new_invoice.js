@@ -29,7 +29,6 @@ function addRow() {
   };
   xhttp.open("GET", "php/add_new_invoice.php?action=add_row&row_id=" + cls.value + "&row_number=" + addRow.counter, true);
   xhttp.send();
-  //alert(addRow.counter);
   addRow.counter++;
   rows++;
 }
@@ -181,7 +180,6 @@ function isMedicine(name) {
   };
   xhttp.open("GET", "php/add_new_invoice.php?action=is_medicine&name=" + name, false);
   xhttp.send();
-  //alert(xhttp.responseText);
   return xhttp.responseText;
 }
 
@@ -192,7 +190,6 @@ function addInvoice() {
   var invoice_number = document.getElementById('invoice_number');
   var payment_type = document.getElementById('payment_type');
   var invoice_date = document.getElementById('invoice_date');
-  //alert(invoice_number.value);
 
   if(!notNull(customers_name.value, "customer_name_error"))
     customers_name.focus();
@@ -219,20 +216,15 @@ function addInvoice() {
       var medicine_name = elements[0].children[0].children[0];
       var medicine_name_error = elements[0].children[0].children[1];
 
-      //var packing = elements[0].children[1].children[0];
-      //var pack_error = elements[0].children[1].children[1];
 
       var batch_id = elements[0].children[1].children[0];
-      //var batch_id_error = elements[0].children[2].children[1];
 
       var expiry_date = elements[0].children[3].children[0];
-      //var expiry_date_error = elements[0].children[3].children[1];
 
       var quantity = elements[0].children[4].children[0];
       var quantity_error = elements[0].children[4].children[1];
 
       var mrp = elements[0].children[5].children[0];
-      //var mrp_error = elements[0].children[5].children[1];
 
       var discount = elements[0].children[6].children[0];
       var discount_error = elements[0].children[6].children[1];
@@ -244,9 +236,7 @@ function addInvoice() {
       var net_total = document.getElementById("net_total");
 
       var flag = false;
-      //alert(quantity.getAttribute('id').slice(9, 10));
 
-      //alert(medicine_name.value + " " + batch_id.value + " " + expiry_date.value + " " + quantity.value + " " + mrp.value + " " + discount.value + " " +total.value);
       var isAvailable = checkAvailableQuantity(quantity.value, quantity.getAttribute('id').slice(9, 10))
       //alert(medicine_name.value);
       if(!notNull(medicine_name.value, medicine_name_error.getAttribute('id')))
@@ -285,7 +275,6 @@ function addInvoice() {
 
       else {
         flag = true;
-        //alert("row " + i + "perfect...");
         medicines[i-1] = new MedicineInfo(medicine_name.value, batch_id.value, expiry_date.value, quantity.value, mrp.value, discount.value, total.value);
       }
 

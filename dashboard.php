@@ -103,7 +103,6 @@ include("auth_session.php");
                             </tr>
                             <tr>
                                 <?php
-                                //echo $date;
                                 $total = 0;
                                 $query = "SELECT TOTAL_AMOUNT FROM purchases WHERE PURCHASE_DATE = '$date'";
                                 $result = mysqli_query($con, $query);
